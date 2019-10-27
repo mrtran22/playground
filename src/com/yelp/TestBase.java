@@ -32,7 +32,7 @@ public class TestBase {
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setRequestProperty("Authorization", apiKey);							// new Yelp Fusion API in 2018 - no more using OAuth2 / getting access token
 		conn.setRequestMethod("GET");
-		conn.setDoInput(true);														// set request body
+//		conn.setDoInput(true);														// set request body
 //		conn.getOutputStream();
 		conn.connect();
 		
